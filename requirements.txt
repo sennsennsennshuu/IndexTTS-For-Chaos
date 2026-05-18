@@ -1,0 +1,41 @@
+# IndexTTS For Chaos - Portable Distribution Requirements
+# Install with: pip install -r requirements.txt
+# Or run: pip install -e ./source
+
+# -- PyTorch (CUDA 12.8) --
+# Install separately: pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+# torch>=2.8
+# torchaudio>=2.8
+
+# -- Core ML/DL --
+transformers>=4.50
+accelerate>=1.8
+safetensors>=0.5
+sentencepiece>=0.2
+einops>=0.8
+omegaconf>=2.3
+
+# -- Audio --
+librosa>=0.10
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+
+# -- Chinese NLP --
+cn2an>=0.5
+jieba>=0.42
+wetext>=0.0.9
+g2p-en>=2.1
+
+# -- Model Hub --
+modelscope>=1.27
+huggingface_hub>=0.25
+
+# -- GUI --
+PyQt6>=6.5
+gradio>=5.0
+
+# -- Utilities --
+tqdm>=4.67
+pandas>=2.0
+matplotlib>=3.8

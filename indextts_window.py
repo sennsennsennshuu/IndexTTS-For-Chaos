@@ -319,11 +319,13 @@ class IndexTTSWindow(QDialog):
                 margin-top: 10px;
                 padding-top: 10px;
                 font-weight: bold;
+                color: black;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
                 left: 10px;
                 padding: 0 5px;
+                color: black;
             }
             QLabel {
                 background-color: transparent;
@@ -349,11 +351,20 @@ class IndexTTSWindow(QDialog):
                 selection-background-color: #e0e0e0;
                 selection-color: black;
                 border: 1px solid #ccc;
-                outline: none;
+                outline: 0px;
             }
             QComboBox::drop-down {
                 border: none;
                 background: transparent;
+            }
+            QComboBox QAbstractItemView::item {
+                background-color: white;
+                color: black;
+                border: none;
+            }
+            QComboBox QAbstractItemView::item:selected {
+                background-color: #e0e0e0;
+                color: black;
             }
             QSlider::groove:horizontal {
                 border: 1px solid #999;

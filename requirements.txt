@@ -33,7 +33,6 @@ huggingface_hub>=0.25
 
 # -- GUI --
 PyQt6>=6.5
-gradio>=5.0
 
 # -- Utilities --
 tqdm>=4.67

@@ -70,7 +70,7 @@ echo   [Step 2/3] Checking dependencies
 
 set "DO_INSTALL=0"
 
-"%PYTHON%" -c "import torch, gradio, PyQt6" >nul 2>nul
+"%PYTHON%" -c "import torch, PyQt6" >nul 2>nul
 if !errorlevel! neq 0 (
     set "DO_INSTALL=1"
 )
@@ -107,7 +107,7 @@ set "INDEXTTS_MODEL_DIR=%APP_DIR%\checkpoints"
 set "HF_HUB_CACHE=%APP_DIR%\checkpoints\hf_cache"
 set "QT_AUTO_SCREEN_SCALE_FACTOR=1"
 
-"%PYTHON%" "%LAUNCHER%" --mode desktop %*
+"%PYTHON%" "%LAUNCHER%" %*
 
 if !errorlevel! neq 0 (
     echo.
